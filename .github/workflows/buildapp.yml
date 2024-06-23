@@ -93,7 +93,7 @@ jobs:
       - name: Set PATH environment variable
         run: echo "$(brew --prefix make)/libexec/gnubin" >> $GITHUB_PATH
 
-      - name: Download IPA (Auto)
+      - name: Download IPA (Auto) # good up to 37d><43d
         if: ${{ inputs.create_release && !inputs.decrypted_youtube_url }}
         uses: level3tjg/decryptedappstore-action@main
         with:
