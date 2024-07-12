@@ -100,7 +100,7 @@ jobs:
           appstore_url: "https://apps.apple.com/us/app/youtube-watch-listen-stream/id544007664"
           cache: true
           path: main/YouTube.ipa
-          token: ${{ secrets.DECRYPTEDAPPSTORE_SESSION_TOKEN }}
+          token: ${{ secrets.DECRYPTEDAPPSTORE_SESSION_TOKEN }} # Get token: https://imgur.com/iERxx4W.png and how to set it: https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository
 
       - name: Download IPA (Manual)
         if: ${{ inputs.create_release && inputs.decrypted_youtube_url }}
