@@ -33,7 +33,7 @@ on:
         type: string
       upload_artifact:
         description: "Upload iPA as artifact (Public)"
-        default: true
+        default: false
         required: false
         type: boolean
       catbox_upload:
